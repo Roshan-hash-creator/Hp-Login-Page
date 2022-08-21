@@ -20,7 +20,7 @@
 <body style="background-color: #F1F1F1;">
     <div class="container pt-5">
         <div class="row">
-            <div class="mx-auto p-0 border" style="width: 429px;">
+            <div class="mx-auto p-0" style="width: 429px;">
                 <div class="py-4 text-center">
                     <img src="/Hp logo.png" alt="logo" height="48" width="48">
                 </div>
@@ -28,26 +28,73 @@
                     <h2 style="font-size: 1.1rem; font-weight: 500; line-height: 28px; ">Sign in with your HP account
                     </h2>
                 </div>
-                <form class="mt-5 p-4 rounded" style="background-color: #fff;">
-                    <div class="mb-3">
-                        <label for="exampleInputEmail1" class="form-label">Email address</label>
-                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                <!-- FORMS  -->
+                <form class="mt-4 rounded-4 shadow "
+                    style="background-color: #fff; padding: 2.5rem; padding-bottom: 1.5rem;">
+                    <div class="col-12">
+                        <p class="mb-0 c-black">You are connecting to:</p>
+                    </div>
+                    <div style="margin-bottom: 2rem;">
+                        <h5>HP</h5>
                     </div>
                     <div class="mb-3">
-                        <label for="exampleInputPassword1" class="form-label">Password</label>
-                        <input type="password" class="form-control" id="exampleInputPassword1">
-                    </div>
-                    <div class="mb-3 form-check">
-                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                        <label class="form-check-label" for="exampleCheck1">Check me out</label>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Submit</button>
+                        <label for="exampleInputEmail1" class="form-label col-12 c-black">Sign in using my:</label>
+                        <div class="form-floating">
+                            <input type="email" class="form-control input-control" id="floatingInput"
+                                placeholder="name@example.com">
+                            <label for="floatingInput" style="font-weight: 500;color: rgb(88, 88, 88);">Username or
+                                Email Address</label>
+                        </div>
+                        <p class="c-black float-end mt-2 ph-no" style="color: #0096D6;">Use mobile number instead</p>
+                        <button type="submit" class="btn btn-primary mt-2 col-12 fw-bold nxt-btn">Next</button>
+
+                        <div class="form-check my-2">
+                            <input class="form-check-input check-bx-size" type="checkbox" value=""
+                                id="flexCheckDefault">
+                            <label class="form-check-label c-black " for="flexCheckDefault"
+                                style="padding: 4px 10px; font-size: 17px;">
+                                Remember me
+                            </label>
+                        </div>
+
+                        <button type="button"
+                            class="col-12 signIn-btn mt-2 d-flex justify-content-start align-items-center">
+                            <img src="/Facebook_icon.svg.png" alt="" height="25" width="25">
+                            <p class="m-0 ms-2 fs-6">Continue with Facebook</p>
+                        </button>
+                        <button type="button"
+                            class="col-12 signIn-btn mt-2 d-flex justify-content-start align-items-center">
+                            <img src="/google__logo.png" alt="" width="25" height="25">
+                            <p class="m-0 ms-2 fs-6">Continue with Google</p>
+                        </button>
+                        <button type="button"
+                            class="col-12 signIn-btn mt-2 d-flex justify-content-start align-items-center ">
+                            <img src="/microsoft_logo.png" alt="" width="25" height="23">
+                            <p class="m-0 ms-2 fs-6">Continue with Microsoft</p>
+                        </button>
+                        <p class="text-center mt-3 c-black mb-0">Don't have an account? <span
+                                style="color: rgb(2, 122, 174);">Sign up</span></p>
                 </form>
             </div>
         </div>
     </div>
+    <p class="text-center c-black mt-4" style="color: rgb(2, 122, 174);">Forgot your username?</p>
+    
+    <div class="container-fluid" style="background-color: #fff;">
+        <div class="row d-flex justify-content-between">
+            <div class="first">
 
+                <div class="col-auto"><img src="/Hp logo.png" alt="" height="30" width="30"></div>
+                <div class="col-auto">© Copyright 2022 HP Development Company, L.P.</div>
+            </div>
+            <div class="second">
+                <ul>
+                    <li>Privacy</li>
+                    <li>English(United States)</li>
+                </ul>
+            </div>
+        </div>
+    </div>
     <!-- BOOTSTRAP JAVA SCRIPTFILE  -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
